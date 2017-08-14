@@ -9,19 +9,26 @@ Dessa forma, foi desenvolvido um algoritmo para interpretar esses arquivos e pod
 
 ## Criando mapas de TEC
 
-Utilizando um sistema de busca que faz a varredura de todos os valores de NE e TEC correspondentes no arquivo, coordenada a coordenada, e reunir todos os valores de conteúdo eletrônico total em todos os pontos geográficos simulados, foi capaz de criar uma imagem com o resultado obtido, de acordo com a Figura XXX.
+Utilizando um sistema de busca que faz a varredura de todos os valores de NE e TEC correspondentes no arquivo, coordenada a coordenada, e reunir todos os valores de conteúdo eletrônico total em todos os pontos geográficos simulados, foi capaz de criar uma imagem com o resultado obtido, de acordo com a Figura 1.
+
+_Figura 1 - Mapa de TEC gerado para a América do Sul_
 
 ![Imgur](http://i.imgur.com/0gluZxS.png)
 
 O algoritmo desenvolvido pode criar inúmeros mapas de TEC, desde que todos os arquivos de texto e dados, resultados da simulação do SUPIM, estejam na pasta desejada, inserida pelo usuário na execução do script. O mapa desenvolvido é geo-referenciado, e suas coordenadas correspondem fielmente aos pontos observáveis reais, aumentando a credibilidade da imagem gerada. 
 
-Além do mapa limitado às coordenadas presentes na Figura 2, foi desenvolvida uma visualização global para os mapas de TEC, conforme Figura 2.
+Além do mapa limitado às coordenadas presentes na Figura 1, foi desenvolvida uma visualização global para os mapas de TEC, conforme Figura 2.
+
+_Figura 2 - Mapa de TEC gerado com visualização global_
 
 ![Imgur](http://i.imgur.com/mTxrARE.png)
 
 Para executar o script, basta rodá-lo no terminal, ou com alguma IDE capaz de interpretar Python. </br>
-Na chamada da execução do arquivo deve ser passado por parâmetro o diretório correspondente contendo os arquivos 'descriptor' e 'data'. </br>
+Na chamada da execução do arquivo deve ser passado por parâmetro o diretório correspondente contendo os arquivos 'descriptor' e 'data'. 
+
 Abaixo fica uma imagem do script sendo executado via terminal. 
+
+_Figura 3 - Script de geração de mapas de TEC sendo executado via terminal_
 
 ![Imgur](http://i.imgur.com/XYrkZhe.png)
 
@@ -35,12 +42,18 @@ O algoritmo desenvolvido lê e interpreta os arquivos ‘descriptor’ usados du
 
 Ao final, tem-se um mapa de TEC referente a data e hora da simulação, no formato IONEX, que pode ser lido em qualquer sistema capaz de interpretar esse formato. A Figura 3 mostra o trecho de um arquivo referente a um mapa IONEX 2D, enquanto a Figura 4 é o resultado para um mapa IONEX 3D.
 
+_Figura 4 - Mapa IONEX 2D_
+
 ![Imgur](http://i.imgur.com/t85NLg6.png)
+
+_Figura 5 - Mapa IONEX 3D_
 
 ![Imgur](http://i.imgur.com/lrax5Ye.png)
 
 Na chamada da execução do arquivo deve ser passado por parâmetro o diretório correspondente contendo os arquivos 'descriptor' e 'data', bem como o número de dimensões desejados para a criação de mapas (2D ou 3D). </br>
 Abaixo fica uma imagem do script sendo executado via terminal. 
+
+_Figura 6 - Script de geração de mapas IONEX 3D executado via terminal_
 
 ![Imgur](http://i.imgur.com/6HZ1dT1.png)
 

@@ -11,11 +11,15 @@ In this way, an algorithm was developed to interpret these files and to be able 
 
 Using a search system that scans all the corresponding NE and TEC values in the file, coordinate by coordinate, and collects all the values of total electronic content in all the simulated geographic points, was able to create an image with the result obtained, according to Figure 1.
 
+_Figure 1 - TEC Map for South America_
+
 ![Imgur](http://i.imgur.com/0gluZxS.png)
 
 The algorithm developed can create numerous TEC maps, as long as all the text and data files (results of the ionospheric prediction system) are in the desired folder, entered by the user in the execution of the script. The developed map is geo-referenced and its coordinates correspond faithfully to the actual observable points, increasing the credibility of the image generated.
 
-In addition to the map present in Figure 2, a global visualization for the TEC maps was developed, according to Figure 2.
+In addition to the map present in Figure 1, a global visualization for the TEC maps was developed, according to Figure 2.
+
+_Figure 2 - TEC Map for South America (Global view)_
 
 ![Imgur](http://i.imgur.com/mTxrARE.png)
 
@@ -23,6 +27,8 @@ To run the script, simply run it in the terminal, or using some IDE able to unde
 During the file execution call, the corresponding directory containing the 'descriptor' and 'data' files must be informed via input parameter.
 
 Below is an image of the script running via terminal.
+
+_Figure 3 - Creating TEC Maps script running in terminal_
 
 ![Imgur](http://i.imgur.com/XYrkZhe.png)
 
@@ -36,12 +42,18 @@ The algorithm developed reads and interprets the 'descriptor' files used during 
 
 At the end, there is a map of TEC referring to the date and time of the simulation, in the IONEX format, which can be read in any system capable of interpreting this format. Figure 3 shows the excerpt of a file referring to an IONEX 2D map, while Figure 4 is the result for an IONEX 3D map.
 
+_Figure 4 - Creating IONEX map 2D_
+
 ![Imgur](http://i.imgur.com/t85NLg6.png)
+
+_Figure 5 - Creating IONEX map 3D_
 
 ![Imgur](http://i.imgur.com/lrax5Ye.png)
 
 During the file execution call, the corresponding directory containing the 'descriptor' and 'data' files, as well as the number of desired dimensions for creating maps (2D or 3D) must be passed via input parameter. </br>
 Below is an image of the script running via terminal.
+
+_Figure 6 - Creating IONEX script executed in terminal_
 
 ![Imgur](http://i.imgur.com/6HZ1dT1.png)
 
