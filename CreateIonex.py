@@ -364,7 +364,7 @@ def write_tec_map(dimension):
                             outputFile.write("\n%s" %(calc_spaces(ne, 5)))
                         else:
                             outputFile.write("%s" %(calc_spaces(ne, 5)))
-            print ' Map %s done...' % (i)
+            print ' Map %s done...' % str(int(i)+1)
             binFile.close()
             outputFile.write("\n%s                                                      END OF TEC MAP      "
                             %(calc_spaces((i+1), 6)))
