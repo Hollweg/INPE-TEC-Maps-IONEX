@@ -481,4 +481,3 @@ write_header(dimension)
 write_tec_map(dimension)
 
 outputFile.close()
-
