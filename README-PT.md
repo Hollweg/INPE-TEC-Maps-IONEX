@@ -3,7 +3,9 @@
 
 ## A proposta
 
-Sabe-se que o sistema de previsão ionosférica do CRS-INPE e de muitos institutos de pesquisa tem como resultado 2 tipos de arquivos, sendo um deles um arquivo de texto (‘descriptor.txt’) contendo os dados a cerca da simulação feita, como latitute, longitude e altura utilizados na previsão, e um arquivo binário (‘data.dat’), contendo todos os dados de simulação estimados e organizados conforme o arquivo texto. Dessa forma, foi desenvolvido um algoritmo para interpretar esses arquivos e poder buscar os dados de acordo com a localização desejada, gerando mapas de TEC e arquivos IONEX das simulações.
+Sabe-se que o sistema de previsão ionosférica do CRS-INPE e de muitos institutos de pesquisa tem como resultado 2 tipos de arquivos, sendo um deles um arquivo de texto (‘descriptor.txt’) contendo os dados a cerca da simulação feita, como latitute, longitude e altura utilizados na previsão, e um arquivo binário (‘data.dat’), contendo todos os dados de simulação estimados e organizados conforme o arquivo texto. 
+
+Dessa forma, foi desenvolvido um algoritmo para interpretar esses arquivos e poder buscar os dados de acordo com a localização desejada, gerando mapas de TEC e arquivos IONEX das simulações.
 
 ## Criando mapas de TEC
 
@@ -26,6 +28,7 @@ Abaixo fica uma imagem do script sendo executado via terminal.
 ## Criando arquivos IONEX
 
 Da mesma forma que o sistema de geração de mapas TEC utiliza os arquivos ‘descriptor’ e ‘data’, esse sistema também faz a leitura desses arquivos, calcula o TEC referente aos pontos necessários, e organiza tudo em um arquivo no formato IONEX.
+
 Baseado em um primeiro formato proposto por [Schaer, 1996], que segue o formato Receiver Independent Exchange (RINEX) [Gurtner e Madner, 1990], o formato conhecido como Ionosphere map Exchange (IONEX), que suporta a troca de informações em duas e três dimensões, foi desenvolvido a fim de ser referência quanto a mapas codificados de TEC. 
 
 O algoritmo desenvolvido lê e interpreta os arquivos ‘descriptor’ usados durante as simulações do SUPIM, calcula o TEC referente aquelas coordenadas, busca esse valor no arquivo ‘data’ e preenche um novo arquivo, resultado do script, com os valores de TEC, seguindo o formato especificado pelo padrão IONEX. Antes do algoritmo ser executado é necessário informar o número de dimensões desejadas (2D ou 3D) e o diretório contendo os arquivos de texto e dados usados no sistema de simulação ionosférica.
